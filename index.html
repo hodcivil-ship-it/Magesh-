@@ -477,10 +477,7 @@ function drawBird(x, y, r, color, name, angle) {
   ctx.arc(x, y, r, 0, Math.PI * 2);
   ctx.stroke();
 
-  ctx.fillStyle = '#fff';
-  ctx.font = 'bold 11px sans-serif';
-  ctx.textAlign = 'center';
-  ctx.fillText(name, x, y - r - 7);
+  // Face name label removed so no text appears around/on the launched face.
 }
 
 function drawScene() {
